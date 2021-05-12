@@ -14,6 +14,7 @@ class CompanyViewModel: ObservableObject {
     @Published var users = [User]()
    
     func loadData(context: NSManagedObjectContext) {
+    
             guard let url = URL(string: "Https://jsonplaceholder.typicode.com/users") else {
                 print("Your API end point is Invalid")
                 return
@@ -29,6 +30,7 @@ class CompanyViewModel: ObservableObject {
                 let decoder = JSONDecoder()
                 decoder.userInfo[CodingUserInfoKey.context!] = context
                 
+                
                 if let data = data,
                     let dataSummary = try? decoder.decode([User].self, from: data) {
 
@@ -40,5 +42,17 @@ class CompanyViewModel: ObservableObject {
                 
             }.resume()
     }
+    
+    func deleteData(context: NSManagedObjectContext) {
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "User")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
 
+        do {
+            try context.execute(deleteRequest)
+            try? context.save()
+        } catch {
+            print("Couldnot delete ")
+        }
+      
+    }
 }

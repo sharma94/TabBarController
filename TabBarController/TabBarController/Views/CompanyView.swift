@@ -9,8 +9,6 @@ import SwiftUI
 import CoreData
 
 struct CompanyView: View {
-    
-   @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(entity: User.entity(), sortDescriptors: [
         NSSortDescriptor(keyPath: \User.name, ascending: true)]) var userData: FetchedResults<User>
@@ -21,17 +19,7 @@ struct CompanyView: View {
         List(userData) { usr in
 
             CompanyRow(user: usr)
-        }.onAppear(perform: fetch)
-    }
-    
-    func fetch() {
-        companyVM.loadData(context: viewContext)
-    }
-}
-
-struct CompanyView_Previews: PreviewProvider {
-    static var previews: some View {
-        CompanyView()
+        }
     }
 }
 
@@ -60,7 +48,7 @@ struct CompanyRow: View {
             }.frame(maxWidth: .infinity, alignment: .center)
             .foregroundColor(Color.blue)
             .padding()
-    
+            .font(.body)
         }
        
         .cornerRadius(15)

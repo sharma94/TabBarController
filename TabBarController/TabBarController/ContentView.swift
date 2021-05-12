@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @Environment(\.managedObjectContext) private var viewContext
+    @ObservedObject var companyVM = CompanyViewModel()
+    
     var body: some View {
         TabView {
             UsersView()
@@ -21,6 +24,11 @@ struct ContentView: View {
                         Image(systemName: "ellipsis.circle")
                         Text("More")
                     }
+        }.onAppear{
+            companyVM.loadData(context: viewContext)
+        }
+        .onDisappear{
+            companyVM.deleteData(context: viewContext)
         }
     }
     
