@@ -2,7 +2,7 @@
 //  Address+CoreDataProperties.swift
 //  TabBarController
 //
-//  Created by R M Sharma on 09/05/21.
+//  Created by R M Sharma on 12/05/21.
 //
 //
 
@@ -16,25 +16,15 @@ extension Address {
         return NSFetchRequest<Address>(entityName: "Address")
     }
 
+    @NSManaged public var city: String?
     @NSManaged public var street: String?
     @NSManaged public var suite: String?
-    @NSManaged public var city: String?
     @NSManaged public var zipcode: String?
+    @NSManaged public var user: User?
     @NSManaged public var geo: Location?
-    @NSManaged public var users: User?
 
 }
 
 extension Address : Identifiable {
 
-}
-
-@objc(Location)
-public class Location: NSManagedObject {
-
-}
-
-extension Location: Identifiable {
-    @NSManaged public var lat: String?
-    @NSManaged public var lng: String?
 }

@@ -7,16 +7,13 @@
 
 import Foundation
 import Combine
+import CoreData
 
 class CompanyViewModel: ObservableObject {
     
-    @Published var users = [Users]()
-    
-    init() {
-        loadData()
-    }
-    
-    func loadData() {
+    @Published var users = [User]()
+   
+    func loadData(context: NSManagedObjectContext) {
             guard let url = URL(string: "Https://jsonplaceholder.typicode.com/users") else {
                 print("Your API end point is Invalid")
                 return
@@ -29,13 +26,19 @@ class CompanyViewModel: ObservableObject {
                         return
                       }
                 
+                let decoder = JSONDecoder()
+                decoder.userInfo[CodingUserInfoKey.context!] = context
+                
                 if let data = data,
-                        let dataSummary = try? JSONDecoder().decode([Users].self, from: data) {
+                    let dataSummary = try? decoder.decode([User].self, from: data) {
+
                     DispatchQueue.main.async {
                         self.users = dataSummary
+                        try? context.save()
                       }
                 }
-           
+                
             }.resume()
-        }
+    }
+
 }

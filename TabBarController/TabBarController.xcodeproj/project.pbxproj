@@ -12,20 +12,21 @@
 		B73A69622647E7210059D9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B73A69612647E7210059D9B1 /* Assets.xcassets */; };
 		B73A69652647E7210059D9B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B73A69642647E7210059D9B1 /* Preview Assets.xcassets */; };
 		B73A69672647E7210059D9B1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69662647E7210059D9B1 /* Persistence.swift */; };
-		B73A696A2647E7210059D9B1 /* TabBarController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B73A69682647E7210059D9B1 /* TabBarController.xcdatamodeld */; };
-		B73A697A2647F1C20059D9B1 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69742647F1C20059D9B1 /* User+CoreDataClass.swift */; };
-		B73A697B2647F1C30059D9B1 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69752647F1C20059D9B1 /* User+CoreDataProperties.swift */; };
-		B73A697C2647F1C30059D9B1 /* Company+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69762647F1C20059D9B1 /* Company+CoreDataClass.swift */; };
-		B73A697D2647F1C30059D9B1 /* Company+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69772647F1C20059D9B1 /* Company+CoreDataProperties.swift */; };
-		B73A697E2647F1C30059D9B1 /* Address+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69782647F1C20059D9B1 /* Address+CoreDataClass.swift */; };
-		B73A697F2647F1C30059D9B1 /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69792647F1C20059D9B1 /* Address+CoreDataProperties.swift */; };
 		B73A6981264801040059D9B1 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A6980264801040059D9B1 /* UsersView.swift */; };
 		B73A69832648014F0059D9B1 /* CompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69822648014F0059D9B1 /* CompanyView.swift */; };
 		B73A6987264801FA0059D9B1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A6986264801FA0059D9B1 /* UserModel.swift */; };
 		B73A698A2648021A0059D9B1 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69892648021A0059D9B1 /* UserViewModel.swift */; };
 		B73A699126485B980059D9B1 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A699026485B980059D9B1 /* NetworkImage.swift */; };
-		B73A6997264872EB0059D9B1 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A6996264872EB0059D9B1 /* Users.swift */; };
 		B73A6999264889CC0059D9B1 /* CompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A6998264889CC0059D9B1 /* CompanyViewModel.swift */; };
+		B73A699F264A89C30059D9B1 /* TabBarController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B73A699D264A89C30059D9B1 /* TabBarController.xcdatamodeld */; };
+		B73A69A6264A8CEB0059D9B1 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69A0264A8CEB0059D9B1 /* User+CoreDataClass.swift */; };
+		B73A69A7264A8CEB0059D9B1 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69A1264A8CEB0059D9B1 /* User+CoreDataProperties.swift */; };
+		B73A69A8264A8CEB0059D9B1 /* Address+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69A2264A8CEB0059D9B1 /* Address+CoreDataClass.swift */; };
+		B73A69AA264A8CEB0059D9B1 /* Company+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69A4264A8CEB0059D9B1 /* Company+CoreDataClass.swift */; };
+		B73A69AB264A8CEB0059D9B1 /* Company+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69A5264A8CEB0059D9B1 /* Company+CoreDataProperties.swift */; };
+		B73A69B3264BD9710059D9B1 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69B1264BD9710059D9B1 /* Location+CoreDataClass.swift */; };
+		B73A69B4264BD9710059D9B1 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69B2264BD9710059D9B1 /* Location+CoreDataProperties.swift */; };
+		B73A69BA264BDB580059D9B1 /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73A69B9264BDB580059D9B1 /* Address+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,21 +36,22 @@
 		B73A69612647E7210059D9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B73A69642647E7210059D9B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B73A69662647E7210059D9B1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		B73A69692647E7210059D9B1 /* TabBarController.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TabBarController.xcdatamodel; sourceTree = "<group>"; };
 		B73A696B2647E7210059D9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B73A69742647F1C20059D9B1 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B73A69752647F1C20059D9B1 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B73A69762647F1C20059D9B1 /* Company+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B73A69772647F1C20059D9B1 /* Company+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B73A69782647F1C20059D9B1 /* Address+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B73A69792647F1C20059D9B1 /* Address+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B73A6980264801040059D9B1 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		B73A69822648014F0059D9B1 /* CompanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyView.swift; sourceTree = "<group>"; };
 		B73A6986264801FA0059D9B1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		B73A69892648021A0059D9B1 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		B73A699026485B980059D9B1 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
-		B73A6996264872EB0059D9B1 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		B73A6998264889CC0059D9B1 /* CompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewModel.swift; sourceTree = "<group>"; };
+		B73A699E264A89C30059D9B1 /* TabBarController.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TabBarController.xcdatamodel; sourceTree = "<group>"; };
+		B73A69A0264A8CEB0059D9B1 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B73A69A1264A8CEB0059D9B1 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B73A69A2264A8CEB0059D9B1 /* Address+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B73A69A4264A8CEB0059D9B1 /* Company+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B73A69A5264A8CEB0059D9B1 /* Company+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B73A69B1264BD9710059D9B1 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B73A69B2264BD9710059D9B1 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B73A69B9264BDB580059D9B1 /* Address+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		B73A69512647E71F0059D9B1 = {
 			isa = PBXGroup;
 			children = (
+				B73A69AC264A95490059D9B1 /* CoreData */,
 				B73A695C2647E71F0059D9B1 /* TabBarController */,
 				B73A695B2647E71F0059D9B1 /* Products */,
 			);
@@ -82,17 +85,16 @@
 		B73A695C2647E71F0059D9B1 /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				B73A6992264862070059D9B1 /* CoreData */,
 				B73A698D264802540059D9B1 /* Services */,
 				B73A6988264802030059D9B1 /* ViewModels */,
 				B73A6985264801E00059D9B1 /* Models */,
 				B73A6984264801A10059D9B1 /* Views */,
 				B73A695D2647E71F0059D9B1 /* TabBarControllerApp.swift */,
 				B73A695F2647E71F0059D9B1 /* ContentView.swift */,
-				B73A69612647E7210059D9B1 /* Assets.xcassets */,
 				B73A69662647E7210059D9B1 /* Persistence.swift */,
+				B73A69612647E7210059D9B1 /* Assets.xcassets */,
 				B73A696B2647E7210059D9B1 /* Info.plist */,
-				B73A69682647E7210059D9B1 /* TabBarController.xcdatamodeld */,
+				B73A699D264A89C30059D9B1 /* TabBarController.xcdatamodeld */,
 				B73A69632647E7210059D9B1 /* Preview Content */,
 			);
 			path = TabBarController;
@@ -119,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				B73A6986264801FA0059D9B1 /* UserModel.swift */,
-				B73A6996264872EB0059D9B1 /* Users.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -141,15 +142,17 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		B73A6992264862070059D9B1 /* CoreData */ = {
+		B73A69AC264A95490059D9B1 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				B73A69742647F1C20059D9B1 /* User+CoreDataClass.swift */,
-				B73A69752647F1C20059D9B1 /* User+CoreDataProperties.swift */,
-				B73A69762647F1C20059D9B1 /* Company+CoreDataClass.swift */,
-				B73A69772647F1C20059D9B1 /* Company+CoreDataProperties.swift */,
-				B73A69782647F1C20059D9B1 /* Address+CoreDataClass.swift */,
-				B73A69792647F1C20059D9B1 /* Address+CoreDataProperties.swift */,
+				B73A69B1264BD9710059D9B1 /* Location+CoreDataClass.swift */,
+				B73A69B2264BD9710059D9B1 /* Location+CoreDataProperties.swift */,
+				B73A69A0264A8CEB0059D9B1 /* User+CoreDataClass.swift */,
+				B73A69A1264A8CEB0059D9B1 /* User+CoreDataProperties.swift */,
+				B73A69A2264A8CEB0059D9B1 /* Address+CoreDataClass.swift */,
+				B73A69B9264BDB580059D9B1 /* Address+CoreDataProperties.swift */,
+				B73A69A4264A8CEB0059D9B1 /* Company+CoreDataClass.swift */,
+				B73A69A5264A8CEB0059D9B1 /* Company+CoreDataProperties.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -224,22 +227,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73A69672647E7210059D9B1 /* Persistence.swift in Sources */,
-				B73A697E2647F1C30059D9B1 /* Address+CoreDataClass.swift in Sources */,
+				B73A69AA264A8CEB0059D9B1 /* Company+CoreDataClass.swift in Sources */,
 				B73A69832648014F0059D9B1 /* CompanyView.swift in Sources */,
-				B73A697F2647F1C30059D9B1 /* Address+CoreDataProperties.swift in Sources */,
-				B73A696A2647E7210059D9B1 /* TabBarController.xcdatamodeld in Sources */,
+				B73A69B4264BD9710059D9B1 /* Location+CoreDataProperties.swift in Sources */,
+				B73A69A6264A8CEB0059D9B1 /* User+CoreDataClass.swift in Sources */,
+				B73A69AB264A8CEB0059D9B1 /* Company+CoreDataProperties.swift in Sources */,
 				B73A698A2648021A0059D9B1 /* UserViewModel.swift in Sources */,
 				B73A6987264801FA0059D9B1 /* UserModel.swift in Sources */,
-				B73A697D2647F1C30059D9B1 /* Company+CoreDataProperties.swift in Sources */,
-				B73A697B2647F1C30059D9B1 /* User+CoreDataProperties.swift in Sources */,
+				B73A69B3264BD9710059D9B1 /* Location+CoreDataClass.swift in Sources */,
 				B73A69602647E71F0059D9B1 /* ContentView.swift in Sources */,
 				B73A6999264889CC0059D9B1 /* CompanyViewModel.swift in Sources */,
+				B73A69BA264BDB580059D9B1 /* Address+CoreDataProperties.swift in Sources */,
 				B73A699126485B980059D9B1 /* NetworkImage.swift in Sources */,
+				B73A699F264A89C30059D9B1 /* TabBarController.xcdatamodeld in Sources */,
 				B73A695E2647E71F0059D9B1 /* TabBarControllerApp.swift in Sources */,
-				B73A697C2647F1C30059D9B1 /* Company+CoreDataClass.swift in Sources */,
-				B73A6997264872EB0059D9B1 /* Users.swift in Sources */,
+				B73A69A8264A8CEB0059D9B1 /* Address+CoreDataClass.swift in Sources */,
+				B73A69A7264A8CEB0059D9B1 /* User+CoreDataProperties.swift in Sources */,
 				B73A6981264801040059D9B1 /* UsersView.swift in Sources */,
-				B73A697A2647F1C20059D9B1 /* User+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,12 +434,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B73A69682647E7210059D9B1 /* TabBarController.xcdatamodeld */ = {
+		B73A699D264A89C30059D9B1 /* TabBarController.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B73A69692647E7210059D9B1 /* TabBarController.xcdatamodel */,
+				B73A699E264A89C30059D9B1 /* TabBarController.xcdatamodel */,
 			);
-			currentVersion = B73A69692647E7210059D9B1 /* TabBarController.xcdatamodel */;
+			currentVersion = B73A699E264A89C30059D9B1 /* TabBarController.xcdatamodel */;
 			path = TabBarController.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

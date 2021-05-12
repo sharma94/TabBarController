@@ -6,25 +6,26 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct CompanyView: View {
     
+   @Environment(\.managedObjectContext) private var viewContext
+
+    @FetchRequest(entity: User.entity(), sortDescriptors: [
+        NSSortDescriptor(keyPath: \User.name, ascending: true)]) var userData: FetchedResults<User>
+
     @ObservedObject var companyVM = CompanyViewModel()
     
-    init(){
-        UITableView.appearance().backgroundColor = .clear
-        UITableView.appearance().separatorStyle = .none
-    }
-    
     var body: some View {
-        
-        List(companyVM.users) { usr in
+        List(userData) { usr in
+
             CompanyRow(user: usr)
         }.onAppear(perform: fetch)
     }
     
     func fetch() {
-        companyVM.loadData()
+        companyVM.loadData(context: viewContext)
     }
 }
 
@@ -35,16 +36,16 @@ struct CompanyView_Previews: PreviewProvider {
 }
 
 struct CompanyRow: View {
-   // var company: CompanyInfo
-    var user: Users
+
+    var user: User
     
     var body: some View {
         VStack(alignment: .leading) {
             
             VStack(alignment: .leading, spacing: 5){
-                Text(user.company.name)
+                Text(user.company?.name ?? "")
                     .font(.headline)
-                Text(user.company.catchPhrase)
+                Text(user.company?.catchPhrase ?? "")
                     .font(.subheadline)
                     .foregroundColor(.gray)
             }.padding()
@@ -53,9 +54,9 @@ struct CompanyRow: View {
                 .foregroundColor(.primary)
             
             HStack {
-                Text(user.email)
+                Text(user.email ?? "")
                 Spacer()
-                Text(user.address.city)
+                Text(user.address?.city ?? "")
             }.frame(maxWidth: .infinity, alignment: .center)
             .foregroundColor(Color.blue)
             .padding()
